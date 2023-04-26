@@ -12,11 +12,18 @@ svg{
     width: 2rem;
     fill: var(--red);
 }
-
-svg:hover{
+svg.card-favorite{
+    fill: var(--black);
+}
+.card-favorite.active{
+    fill: var(--red);
+}
+svg:hover,
+svg:hover.active{
     fill: var(--white);
 }
-svg:active{
+svg:active
+svg:active.active{
     fill: var(--orange);
 }
 
@@ -37,6 +44,7 @@ h1{
     letter-spacing: 1rem;
     font-size: 4rem;
     padding-top: 3.5rem;
+    padding-left: 2.75rem;
     
 }
 
@@ -47,7 +55,6 @@ h1{
 
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
-
 }
 
 #header-text,
@@ -90,7 +97,7 @@ h1{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     min-width: 15rem;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 2rem;
 }
@@ -162,16 +169,16 @@ h1{
 .form-container{
     background-color: var(--black);
     position: absolute;
-    top: 210px;
-    right: 25px;
-    /*left: calc(100vw - 23.5rem);*/
+    top: 3px;
+    right: 100px;
     width: 20rem;
+    height: 9rem;
     padding: 1rem;
     padding-top: 1.5rem;
-    z-index: 0;
+    z-index: -1;
     margin: 0;
     border-radius: .15rem;
-    box-shadow: 1px 1px black;
+    border: 1px solid black;
     color: #B46060;
 }
 
@@ -212,6 +219,6 @@ label{
 input:focus{
     border: none;
     outline: 3px solid var(--red);
-    
+
 }
 

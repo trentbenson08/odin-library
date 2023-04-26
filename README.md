@@ -1,9 +1,11 @@
 # Library
 
+![alt text](./misc/Screenshot%202023-04-26%20at%2017-35-51%20Library.png)
 
 ## Description
 
 This repository contains my code for the 'Library' project found in The Odin Project's JavaScript course.
+This webpage allows its users to catalog a collection of books. Functionality includes, the ability to add new books to the catalog, delete existing book from the catalog, and select existing books to be catagorized as a favorite.
 
 
 ## Built With
