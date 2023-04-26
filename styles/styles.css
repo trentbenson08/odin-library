@@ -1,0 +1,177 @@
+:root{
+
+}
+
+.button :hover{
+    background-color: gray;
+}
+.button :active{
+    background-color: aqua;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    height: 2.25rem;
+}
+#header{
+    background-color: lightblue;
+    height: 12rem;
+
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+
+}
+
+#header-text,
+#header-search,
+#header-buttons{
+    display: flex;
+    padding: 0 2rem 0 2rem;
+}
+
+#header-text,
+#header-search{
+    min-width: 30rem
+}
+
+#header{
+    box-shadow: 0px 2px 10px;
+}
+#header-text{
+
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    align-items: center;
+}
+#header-text h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+#header-search{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-items: center;
+    gap: 1rem;
+}
+#search-bar{
+    width: 20rem;
+}
+#header-buttons{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    min-width: 15rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+#card-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    height: 20rem;
+    width: 15rem;
+    border: 2px solid black;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem;
+    
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+
+
+    background-color:aqua;
+}
+
+.card-title{
+    width: 15rem;
+    font-size: 1.75rem;
+    height: 4rem;
+    background-color: lightcoral;
+}
+
+.card-footer{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+.form-container{
+    background-color: lightblue;
+    position: absolute;
+    top: 210px;
+    right: 25px;
+    /*left: calc(100vw - 23.5rem);*/
+    width: 20rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    z-index: 0;
+    margin: 0;
+    border-radius: .5rem;
+    box-shadow: 0px 2px 10px;
+}
+
+#add-book-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.form-items{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-piece{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-items input{
+    width: 15rem;
+}
+label{
+    width: 4rem;
+}
+
+.text-input{
+    border: none;
+    border-radius: .5rem;
+    height: 1.5rem;
+}
+

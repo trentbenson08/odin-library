@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="header-text">
+                <h1>Library</h1>
+            </div>
+            <div id="header-search">
+                <div class="button"><img id="search-button" src="./icns/magnify.svg" alt="search"></div>
+                <form action="#" method="get">
+                    <input id="search-bar" class="text-input" type="text">
+                </form>
+            </div>
+            <div id="header-buttons">
+                <div class="button"><img src="./icns/plus-outline.svg" alt="add"></div>
+                <div class="button"><img src="./icns/book-edit-outline.svg" alt="edit"></div>
+                <div class="button"><img src="./icns/share-outline.svg" alt="share"></div>
+            </div>
+        </div>
+
+        <div id="content">
+
+            <div id="card-container">
+                <div class="card">
+
+                    <div class="card-info">
+                        <div class="card-text">
+                            <h3 class="card-title">Title</h3>
+                            <p>Author</p>
+                        </div>
+                        <div class="card-footer">
+                            <img class= "card-menu" src="./icns/menu.svg" alt="menu">
+                            <div class="card-pages">Pages: 150</div>
+                            <img class= "card-favorite" src="./icns/star-outline.svg" alt="favorite">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="form">
+
+
+            <div class="form-container">
+                <form id="add-book-form" action="" method="get">
+                    <div class="form-items">
+                        
+                        <div class="form-piece">
+                            <label for="title-input">Title:</label>
+                            <input id="title-input" class="text-input" type="text" minlength="1" maxlength="25">
+                        </div>
+
+                        <div class="form-piece">
+                            <label for="author-input">Author:</label>
+                            <input id="author-input" class="text-input" type="text" minlength="3" maxlength="25">
+                        </div>   
+
+                        <div class="form-piece">
+                            <label for="page-input">Pages:</label>
+                            <input id="page-input" class="text-input" type="number">
+                        </div>
+
+                    </div>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
