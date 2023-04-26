@@ -1,22 +1,48 @@
 :root{
-
+    --beige: #de825e34;
+    --orange: #FFBF9B;
+    --red: #B46060;
+    --black: #4D4D4D;
+    --white: #fff;
+}
+p{
+    padding: .5rem 0rem .5rem 1rem;
+}
+svg{
+    width: 2rem;
+    fill: var(--red);
 }
 
-.button :hover{
-    background-color: gray;
+svg:hover{
+    fill: var(--white);
 }
-.button :active{
-    background-color: aqua;
+svg:active{
+    fill: var(--orange);
+}
+
+h1,label,svg,h3{
+    text-shadow: 1px 1px black;
 }
 
 html{
+    background-color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
 }
 img{
     height: 2.25rem;
 }
+
+h1{
+    color: var(--red);
+    letter-spacing: 1rem;
+    font-size: 4rem;
+    padding-top: 3.5rem;
+    
+}
+
+
 #header{
-    background-color: lightblue;
+    background-color: var(--black);
     height: 12rem;
 
     display: grid;
@@ -37,7 +63,7 @@ img{
 }
 
 #header{
-    box-shadow: 0px 2px 10px;
+    box-shadow: 0px 1px black;
 }
 #header-text{
 
@@ -46,7 +72,7 @@ img{
 
     align-items: center;
 }
-#header-text h1{
+#header-text{
     font-size: 2.5rem;
     font-weight: 600;
     
@@ -86,7 +112,9 @@ img{
     display: flex;
     height: 20rem;
     width: 15rem;
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: .25rem;
+    background-color: var(--beige);
 }
 
 .card-info{
@@ -94,7 +122,7 @@ img{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     
 }
 
@@ -103,22 +131,25 @@ img{
     flex-direction: column;
 
 
-    background-color:aqua;
+    background-color:var(--orange);
 }
 
 .card-title{
-    width: 15rem;
+    width: 13rem;
     font-size: 1.75rem;
     height: 4rem;
-    background-color: lightcoral;
+    background-color: var(--red);
+    text-shadow: 1.2px 1.2px black;
+    color: var(--white);
+    padding: 1rem;
 }
 
 .card-footer{
-    width: 15rem;
+    width: 13rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin: .25rem;
 }
 
 
@@ -129,7 +160,7 @@ img{
 
 
 .form-container{
-    background-color: lightblue;
+    background-color: var(--black);
     position: absolute;
     top: 210px;
     right: 25px;
@@ -139,8 +170,9 @@ img{
     padding-top: 1.5rem;
     z-index: 0;
     margin: 0;
-    border-radius: .5rem;
-    box-shadow: 0px 2px 10px;
+    border-radius: .15rem;
+    box-shadow: 1px 1px black;
+    color: #B46060;
 }
 
 #add-book-form{
@@ -167,11 +199,19 @@ img{
 }
 label{
     width: 4rem;
+    font-weight: 600;
 }
 
 .text-input{
     border: none;
     border-radius: .5rem;
     height: 1.5rem;
+    background-color: var(--white);
+}
+
+input:focus{
+    border: none;
+    outline: 3px solid var(--red);
+    
 }
 
