@@ -1,14 +1,38 @@
 const myLibrary = [];
 
 
-function Book(title, author, page) {
-    this.title = title;
-    this.author = author;
-    this.page = page;
+// function Book(title, author, page) {
+//     this.title = title;
+//     this.author = author;
+//     this.page = page;
 
-    this.index = undefined;
-    this.selected = false;
-    this.favorite = false;
+//     this.index = undefined;
+//     this.selected = false;
+//     this.favorite = false;
+// }
+
+
+class Book{
+    constructor(title, author, page){
+        this.title = title;
+        this.author = author;
+        this.page = page;
+        this._favorite = false;
+    }
+
+    set index(num){
+        this._index = num;
+    }
+    get index(){
+        return this._index;
+    }
+
+    set favorite(val){
+        this._favorite = val;
+    }
+    get favorite(){
+        return this._favorite;
+    }
 }
 
 
